@@ -1,0 +1,37 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname="helvetica"] ;
+edge [fontname="helvetica"] ;
+0 [label=<pipeline-2__segment___DATA_CONST_initprot_rw- &le; 0.5<br/>gini = 0.49<br/>samples = 1774<br/>value = [1210, 1597]>, fillcolor="#cfe7f9"] ;
+1 [label=<pipeline-1__/System/Library/Frameworks/Foundation.framework/Versions/C/Foundation &le; 0.216<br/>gini = 0.372<br/>samples = 1344<br/>value = [523, 1597]>, fillcolor="#7abdee"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label=<pipeline-1__segment___TEXT_size &le; -0.081<br/>gini = 0.276<br/>samples = 1046<br/>value = [274, 1382]>, fillcolor="#60b0ea"] ;
+1 -> 2 ;
+3 [label=<pipeline-1__segment___DATA___objc_const &le; 0.25<br/>gini = 0.227<br/>samples = 900<br/>value = [186, 1236]>, fillcolor="#57ace9"] ;
+2 -> 3 ;
+4 [label=<gini = 0.226<br/>samples = 899<br/>value = [185, 1236]>, fillcolor="#57ace9"] ;
+3 -> 4 ;
+5 [label=<gini = 0.0<br/>samples = 1<br/>value = [1, 0]>, fillcolor="#e58139"] ;
+3 -> 5 ;
+6 [label=<pipeline-1__slcs &le; -0.156<br/>gini = 0.469<br/>samples = 146<br/>value = [88, 146]>, fillcolor="#b0d8f5"] ;
+2 -> 6 ;
+7 [label=<gini = 0.481<br/>samples = 66<br/>value = [65, 44]>, fillcolor="#f7d6bf"] ;
+6 -> 7 ;
+8 [label=<gini = 0.3<br/>samples = 80<br/>value = [23, 102]>, fillcolor="#66b3eb"] ;
+6 -> 8 ;
+9 [label=<pipeline-1__slcs &le; 0.475<br/>gini = 0.497<br/>samples = 298<br/>value = [249, 215]>, fillcolor="#fbeee4"] ;
+1 -> 9 ;
+10 [label=<pipeline-1__segment___TEXT___objc_methname &le; 0.269<br/>gini = 0.437<br/>samples = 76<br/>value = [40, 84]>, fillcolor="#97ccf1"] ;
+9 -> 10 ;
+11 [label=<gini = 0.434<br/>samples = 41<br/>value = [22, 47]>, fillcolor="#96cbf1"] ;
+10 -> 11 ;
+12 [label=<gini = 0.44<br/>samples = 35<br/>value = [18, 37]>, fillcolor="#99cdf2"] ;
+10 -> 12 ;
+13 [label=<pipeline-1__segment___TEXT_size &le; 0.945<br/>gini = 0.474<br/>samples = 222<br/>value = [209, 131]>, fillcolor="#f5d0b5"] ;
+9 -> 13 ;
+14 [label=<gini = 0.499<br/>samples = 167<br/>value = [138, 125]>, fillcolor="#fdf3ec"] ;
+13 -> 14 ;
+15 [label=<gini = 0.144<br/>samples = 55<br/>value = [71, 6]>, fillcolor="#e78c4a"] ;
+13 -> 15 ;
+16 [label=<gini = 0.0<br/>samples = 430<br/>value = [687, 0]>, fillcolor="#e58139"] ;
+0 -> 16 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+}
